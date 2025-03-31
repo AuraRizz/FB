@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://2cla83pl774m"]
+
+[ext_resource type="Texture2D" uid="uid://8gepmojtkvmb" path="res://bosc fons.jpg" id="1_bts7h"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(575.5, 321.5)
+scale = Vector2(1.88072, 1.86919)
+texture = ExtResource("1_bts7h")

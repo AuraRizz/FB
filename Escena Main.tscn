@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4h7qel4gviq"]
+
+[ext_resource type="Texture2D" uid="uid://8gepmojtkvmb" path="res://bosc fons.jpg" id="1_bts7h"]
+[ext_resource type="PackedScene" uid="uid://vfc2ar84femv" path="res://Escenes/Murs colisio.tscn" id="2_dh5c6"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(575.5, 321.5)
+scale = Vector2(1.88072, 1.86919)
+texture = ExtResource("1_bts7h")
+
+[node name="Mur1" parent="." instance=ExtResource("2_dh5c6")]
+position = Vector2(91, 551)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur 2" parent="." instance=ExtResource("2_dh5c6")]
+position = Vector2(195, 93)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur3" parent="." instance=ExtResource("2_dh5c6")]
+position = Vector2(296, 93)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur4" parent="." instance=ExtResource("2_dh5c6")]
+position = Vector2(296, 255)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur5" parent="." instance=ExtResource("2_dh5c6")]
+position = Vector2(296, 649)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur6" parent="." instance=ExtResource("2_dh5c6")]
+position = Vector2(464, 93)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur7" parent="." instance=ExtResource("2_dh5c6")]
+position = Vector2(464, 181)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur8" parent="." instance=ExtResource("2_dh5c6")]
+position = Vector2(464, 550)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur9" parent="." instance=ExtResource("2_dh5c6")]
+position = Vector2(641, 550)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur10" parent="." instance=ExtResource("2_dh5c6")]
+position = Vector2(641, 365)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur11" parent="." instance=ExtResource("2_dh5c6")]
+position = Vector2(641, 56)
+scale = Vector2(0.0799986, 0.119998)
