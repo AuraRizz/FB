@@ -114,7 +114,7 @@ scale = Vector2(0.0799986, 0.119998)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_qxk4j")]
 position = Vector2(46, 40)
-scale = Vector2(0.160001, 0.160001)
+scale = Vector2(0.0400013, 0.0400013)
 script = ExtResource("4_p7w88")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]

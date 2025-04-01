@@ -1,14 +1,30 @@
-[gd_scene load_steps=3 format=3 uid="uid://bsx1ces6i0p0"]
+[gd_scene load_steps=5 format=3 uid="uid://bsx1ces6i0p0"]
 
-[ext_resource type="Texture2D" uid="uid://c7wekowey13et" path="res://Flappy_bird.png" id="1_ars5g"]
+[ext_resource type="Texture2D" uid="uid://bylo2bqdr5b07" path="res://Flappy-Bird-PNG-ara si.png" id="1_4et5y"]
+[ext_resource type="Texture2D" uid="uid://c2i4dobtisriq" path="res://Flappy-Bird-PNG-Transparent-Picture Prova 2.png" id="2_gq1n2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t3mrm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4et5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gq1n2")
+}],
+"loop": true,
+"name": &"Vola ",
+"speed": 5.0
+}]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4et5y"]
-radius = 265.0
+radius = 1138.24
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_ars5g")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_t3mrm")
+animation = &"Vola "
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_4et5y")
