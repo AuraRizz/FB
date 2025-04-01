@@ -1,55 +1,128 @@
-[gd_scene load_steps=3 format=3 uid="uid://c4h7qel4gviq"]
+[gd_scene load_steps=5 format=3 uid="uid://c4h7qel4gviq"]
 
 [ext_resource type="Texture2D" uid="uid://8gepmojtkvmb" path="res://bosc fons.jpg" id="1_bts7h"]
 [ext_resource type="PackedScene" uid="uid://vfc2ar84femv" path="res://Escenes/Murs colisio.tscn" id="2_dh5c6"]
+[ext_resource type="PackedScene" uid="uid://bsx1ces6i0p0" path="res://Escenes/Flappy Bird.tscn" id="3_qxk4j"]
+[ext_resource type="Script" uid="uid://dakq173j7v4pi" path="res://Scripts/flappy_bird.gd" id="4_p7w88"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(575.5, 321.5)
-scale = Vector2(1.88072, 1.86919)
-texture = ExtResource("1_bts7h")
+[node name="Node2D" type="Node2D" parent="."]
 
-[node name="Mur1" parent="." instance=ExtResource("2_dh5c6")]
+[node name="Murs" type="Node2D" parent="."]
+position = Vector2(110, 0)
+
+[node name="Mur1" parent="Murs" instance=ExtResource("2_dh5c6")]
 position = Vector2(91, 551)
 scale = Vector2(0.0799986, 0.119998)
 
-[node name="Mur 2" parent="." instance=ExtResource("2_dh5c6")]
+[node name="Mur 2" parent="Murs" instance=ExtResource("2_dh5c6")]
 position = Vector2(195, 93)
 scale = Vector2(0.0799986, 0.119998)
 
-[node name="Mur3" parent="." instance=ExtResource("2_dh5c6")]
+[node name="Mur3" parent="Murs" instance=ExtResource("2_dh5c6")]
 position = Vector2(296, 93)
 scale = Vector2(0.0799986, 0.119998)
 
-[node name="Mur4" parent="." instance=ExtResource("2_dh5c6")]
+[node name="Mur4" parent="Murs" instance=ExtResource("2_dh5c6")]
 position = Vector2(296, 255)
 scale = Vector2(0.0799986, 0.119998)
 
-[node name="Mur5" parent="." instance=ExtResource("2_dh5c6")]
+[node name="Mur5" parent="Murs" instance=ExtResource("2_dh5c6")]
 position = Vector2(296, 649)
 scale = Vector2(0.0799986, 0.119998)
 
-[node name="Mur6" parent="." instance=ExtResource("2_dh5c6")]
+[node name="Mur6" parent="Murs" instance=ExtResource("2_dh5c6")]
 position = Vector2(464, 93)
 scale = Vector2(0.0799986, 0.119998)
 
-[node name="Mur7" parent="." instance=ExtResource("2_dh5c6")]
+[node name="Mur7" parent="Murs" instance=ExtResource("2_dh5c6")]
 position = Vector2(464, 181)
 scale = Vector2(0.0799986, 0.119998)
 
-[node name="Mur8" parent="." instance=ExtResource("2_dh5c6")]
+[node name="Mur8" parent="Murs" instance=ExtResource("2_dh5c6")]
 position = Vector2(464, 550)
 scale = Vector2(0.0799986, 0.119998)
 
-[node name="Mur9" parent="." instance=ExtResource("2_dh5c6")]
+[node name="Mur9" parent="Murs" instance=ExtResource("2_dh5c6")]
 position = Vector2(641, 550)
 scale = Vector2(0.0799986, 0.119998)
 
-[node name="Mur10" parent="." instance=ExtResource("2_dh5c6")]
-position = Vector2(641, 365)
+[node name="Mur10" parent="Murs" instance=ExtResource("2_dh5c6")]
+position = Vector2(641, 368)
 scale = Vector2(0.0799986, 0.119998)
 
-[node name="Mur11" parent="." instance=ExtResource("2_dh5c6")]
+[node name="Mur11" parent="Murs" instance=ExtResource("2_dh5c6")]
 position = Vector2(641, 56)
 scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur12" parent="Murs" instance=ExtResource("2_dh5c6")]
+position = Vector2(811, 92)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur13" parent="Murs" instance=ExtResource("2_dh5c6")]
+position = Vector2(811, 551)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur2" parent="Murs" instance=ExtResource("2_dh5c6")]
+position = Vector2(1025, 550)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur 3" parent="Murs" instance=ExtResource("2_dh5c6")]
+position = Vector2(1129, 92)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur14" parent="Murs" instance=ExtResource("2_dh5c6")]
+position = Vector2(1230, 92)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur15" parent="Murs" instance=ExtResource("2_dh5c6")]
+position = Vector2(1230, 254)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur16" parent="Murs" instance=ExtResource("2_dh5c6")]
+position = Vector2(1230, 648)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur17" parent="Murs" instance=ExtResource("2_dh5c6")]
+position = Vector2(1398, 92)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur18" parent="Murs" instance=ExtResource("2_dh5c6")]
+position = Vector2(1398, 180)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur19" parent="Murs" instance=ExtResource("2_dh5c6")]
+position = Vector2(1398, 549)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur20" parent="Murs" instance=ExtResource("2_dh5c6")]
+position = Vector2(1575, 549)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur21" parent="Murs" instance=ExtResource("2_dh5c6")]
+position = Vector2(1575, 367)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur22" parent="Murs" instance=ExtResource("2_dh5c6")]
+position = Vector2(1745, 91)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="Mur23" parent="Murs" instance=ExtResource("2_dh5c6")]
+position = Vector2(1745, 550)
+scale = Vector2(0.0799986, 0.119998)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_qxk4j")]
+position = Vector2(46, 40)
+scale = Vector2(0.160001, 0.160001)
+script = ExtResource("4_p7w88")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(1, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(600.436, 338.5)
+scale = Vector2(1.96221, 1.96221)
+texture = ExtResource("1_bts7h")
