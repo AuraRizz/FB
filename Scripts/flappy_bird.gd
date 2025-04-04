@@ -13,3 +13,5 @@ func _process(delta: float) -> void:
 		velocity.y = SALTS
 	velocity += gravetat * delta
 	move_and_slide()
+if velocity.y < 0:
+	$AnimatedSprite2D.play("Vola")

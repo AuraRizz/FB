@@ -8,13 +8,18 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_4et5y")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_gq1n2")
 }],
 "loop": true,
-"name": &"Vola ",
+"name": &"Default",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("2_gq1n2")
+}],
+"loop": false,
+"name": &"Vola ",
+"speed": 2.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4et5y"]
