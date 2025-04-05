@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://vfc2ar84femv"]
 
-[ext_resource type="Script" uid="uid://dt2jaiaexqa4d" path="res://Scripts/Murs.gd" id="1_8qf35"]
+[ext_resource type="Script" uid="uid://cjceoj8cbq7ex" path="res://Scripts/Moviment Murs.gd" id="1_8qf35"]
 [ext_resource type="Texture2D" uid="uid://gn3aijy7iyrc" path="res://mur.png" id="2_54vqq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_865va"]

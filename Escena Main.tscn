@@ -19,6 +19,7 @@ script = ExtResource("1_a0h3p")
 [node name="Mur1" parent="Murs/Mur 1" instance=ExtResource("2_dh5c6")]
 position = Vector2(91, 551)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur 2" type="Node2D" parent="Murs"]
 position = Vector2(66, 0)
@@ -27,6 +28,7 @@ script = ExtResource("1_a0h3p")
 [node name="Mur 2" parent="Murs/Mur 2" instance=ExtResource("2_dh5c6")]
 position = Vector2(195, 93)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur 3" type="Node2D" parent="Murs"]
 position = Vector2(163, 0)
@@ -35,14 +37,17 @@ script = ExtResource("1_a0h3p")
 [node name="Mur3" parent="Murs/Mur 3" instance=ExtResource("2_dh5c6")]
 position = Vector2(296, 93)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur4" parent="Murs/Mur 3" instance=ExtResource("2_dh5c6")]
 position = Vector2(296, 255)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur5" parent="Murs/Mur 3" instance=ExtResource("2_dh5c6")]
 position = Vector2(296, 649)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur 4" type="Node2D" parent="Murs"]
 position = Vector2(217, 0)
@@ -51,14 +56,17 @@ script = ExtResource("1_a0h3p")
 [node name="Mur6" parent="Murs/Mur 4" instance=ExtResource("2_dh5c6")]
 position = Vector2(464, 93)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur7" parent="Murs/Mur 4" instance=ExtResource("2_dh5c6")]
 position = Vector2(464, 181)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur8" parent="Murs/Mur 4" instance=ExtResource("2_dh5c6")]
 position = Vector2(464, 550)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur 5" type="Node2D" parent="Murs"]
 position = Vector2(267, 0)
@@ -67,14 +75,17 @@ script = ExtResource("1_a0h3p")
 [node name="Mur11" parent="Murs/Mur 5" instance=ExtResource("2_dh5c6")]
 position = Vector2(641, 56)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur10" parent="Murs/Mur 5" instance=ExtResource("2_dh5c6")]
 position = Vector2(641, 368)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur9" parent="Murs/Mur 5" instance=ExtResource("2_dh5c6")]
 position = Vector2(641, 550)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur 6" type="Node2D" parent="Murs"]
 position = Vector2(317, 0)
@@ -83,10 +94,12 @@ script = ExtResource("1_a0h3p")
 [node name="Mur12" parent="Murs/Mur 6" instance=ExtResource("2_dh5c6")]
 position = Vector2(811, 92)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur13" parent="Murs/Mur 6" instance=ExtResource("2_dh5c6")]
 position = Vector2(811, 551)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur 7" type="Node2D" parent="Murs"]
 position = Vector2(1272, 0)
@@ -95,6 +108,7 @@ script = ExtResource("1_a0h3p")
 [node name="Mur1" parent="Murs/Mur 7" instance=ExtResource("2_dh5c6")]
 position = Vector2(91, 551)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur 8" type="Node2D" parent="Murs"]
 position = Vector2(1338, 0)
@@ -103,6 +117,7 @@ script = ExtResource("1_a0h3p")
 [node name="Mur 2" parent="Murs/Mur 8" instance=ExtResource("2_dh5c6")]
 position = Vector2(195, 93)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur 9" type="Node2D" parent="Murs"]
 position = Vector2(1435, 0)
@@ -111,14 +126,17 @@ script = ExtResource("1_a0h3p")
 [node name="Mur3" parent="Murs/Mur 9" instance=ExtResource("2_dh5c6")]
 position = Vector2(296, 93)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur4" parent="Murs/Mur 9" instance=ExtResource("2_dh5c6")]
 position = Vector2(296, 255)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur5" parent="Murs/Mur 9" instance=ExtResource("2_dh5c6")]
 position = Vector2(296, 649)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur 10" type="Node2D" parent="Murs"]
 position = Vector2(1489, 0)
@@ -127,14 +145,17 @@ script = ExtResource("1_a0h3p")
 [node name="Mur6" parent="Murs/Mur 10" instance=ExtResource("2_dh5c6")]
 position = Vector2(464, 93)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur7" parent="Murs/Mur 10" instance=ExtResource("2_dh5c6")]
 position = Vector2(464, 181)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur8" parent="Murs/Mur 10" instance=ExtResource("2_dh5c6")]
 position = Vector2(464, 550)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur 11" type="Node2D" parent="Murs"]
 position = Vector2(1539, 0)
@@ -143,14 +164,17 @@ script = ExtResource("1_a0h3p")
 [node name="Mur11" parent="Murs/Mur 11" instance=ExtResource("2_dh5c6")]
 position = Vector2(641, 56)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur10" parent="Murs/Mur 11" instance=ExtResource("2_dh5c6")]
 position = Vector2(641, 368)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur9" parent="Murs/Mur 11" instance=ExtResource("2_dh5c6")]
 position = Vector2(641, 550)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur 12" type="Node2D" parent="Murs"]
 position = Vector2(1589, 0)
@@ -159,10 +183,12 @@ script = ExtResource("1_a0h3p")
 [node name="Mur12" parent="Murs/Mur 12" instance=ExtResource("2_dh5c6")]
 position = Vector2(811, 92)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="Mur13" parent="Murs/Mur 12" instance=ExtResource("2_dh5c6")]
 position = Vector2(811, 551)
 scale = Vector2(0.0799986, 0.119998)
+script = null
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_qxk4j")]
 position = Vector2(46, 40)

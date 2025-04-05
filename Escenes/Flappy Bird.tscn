@@ -3,23 +3,26 @@
 [ext_resource type="Texture2D" uid="uid://bylo2bqdr5b07" path="res://Flappy-Bird-PNG-ara si.png" id="1_4et5y"]
 [ext_resource type="Texture2D" uid="uid://c2i4dobtisriq" path="res://Flappy-Bird-PNG-Transparent-Picture Prova 2.png" id="2_gq1n2"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_t3mrm"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_4et5y"]
 animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_4et5y")
 }],
 "loop": true,
-"name": &"Default",
+"name": &"Normal",
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 2.0,
+"duration": 1.0,
+"texture": ExtResource("1_4et5y")
+}, {
+"duration": 1.0,
 "texture": ExtResource("2_gq1n2")
 }],
-"loop": false,
-"name": &"Vola ",
-"speed": 2.0
+"loop": true,
+"name": &"Volar",
+"speed": 7.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4et5y"]
@@ -28,8 +31,8 @@ radius = 1138.24
 [node name="CharacterBody2D" type="CharacterBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_t3mrm")
-animation = &"Vola "
+sprite_frames = SubResource("SpriteFrames_4et5y")
+animation = &"Normal"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_4et5y")
