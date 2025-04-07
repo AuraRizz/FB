@@ -1,48 +1,147 @@
-[gd_scene load_steps=4 format=3 uid="uid://vfc2ar84femv"]
+[gd_scene load_steps=5 format=3 uid="uid://vfc2ar84femv"]
 
 [ext_resource type="Script" uid="uid://cjceoj8cbq7ex" path="res://Scripts/Moviment Murs.gd" id="1_8qf35"]
 [ext_resource type="Texture2D" uid="uid://gn3aijy7iyrc" path="res://mur.png" id="2_54vqq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_865va"]
-size = Vector2(251, 1529)
+size = Vector2(251, 6111)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8qf35"]
+size = Vector2(248, 6083)
 
 [node name="StaticBody2D" type="StaticBody2D"]
 script = ExtResource("1_8qf35")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Dalt" type="Node2D" parent="."]
+position = Vector2(0, -411.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="Dalt"]
 position = Vector2(0, -1159)
 rotation = 1.5708
 texture = ExtResource("2_54vqq")
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
+[node name="Sprite2D2" type="Sprite2D" parent="Dalt"]
 position = Vector2(0, -646)
 rotation = 1.5708
 texture = ExtResource("2_54vqq")
 
-[node name="Sprite2D3" type="Sprite2D" parent="."]
+[node name="Sprite2D3" type="Sprite2D" parent="Dalt"]
 position = Vector2(0, -1665)
 rotation = 1.5708
 texture = ExtResource("2_54vqq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, -1152.5)
-shape = SubResource("RectangleShape2D_865va")
+[node name="Sprite2D7" type="Sprite2D" parent="Dalt"]
+position = Vector2(0, -2683)
+rotation = 1.5708
+texture = ExtResource("2_54vqq")
 
-[node name="Sprite2D4" type="Sprite2D" parent="."]
+[node name="Sprite2D8" type="Sprite2D" parent="Dalt"]
+position = Vector2(0, -2170)
+rotation = 1.5708
+texture = ExtResource("2_54vqq")
+
+[node name="Sprite2D9" type="Sprite2D" parent="Dalt"]
+position = Vector2(0, -3189)
+rotation = 1.5708
+texture = ExtResource("2_54vqq")
+
+[node name="Sprite2D10" type="Sprite2D" parent="Dalt"]
+position = Vector2(0, -4214)
+rotation = 1.5708
+texture = ExtResource("2_54vqq")
+
+[node name="Sprite2D11" type="Sprite2D" parent="Dalt"]
+position = Vector2(0, -3701)
+rotation = 1.5708
+texture = ExtResource("2_54vqq")
+
+[node name="Sprite2D12" type="Sprite2D" parent="Dalt"]
+position = Vector2(0, -4720)
+rotation = 1.5708
+texture = ExtResource("2_54vqq")
+
+[node name="Sprite2D13" type="Sprite2D" parent="Dalt"]
+position = Vector2(0, -5738)
+rotation = 1.5708
+texture = ExtResource("2_54vqq")
+
+[node name="Sprite2D14" type="Sprite2D" parent="Dalt"]
+position = Vector2(0, -5225)
+rotation = 1.5708
+texture = ExtResource("2_54vqq")
+
+[node name="Sprite2D15" type="Sprite2D" parent="Dalt"]
+position = Vector2(0, -6244)
+rotation = 1.5708
+texture = ExtResource("2_54vqq")
+
+[node name="Baix" type="Node2D" parent="."]
+position = Vector2(0, 515)
+
+[node name="Sprite2D4" type="Sprite2D" parent="Baix"]
+position = Vector2(0, 2691)
+rotation = 1.5708
+texture = ExtResource("2_54vqq")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Baix"]
+position = Vector2(0, 3204)
+rotation = 1.5708
+texture = ExtResource("2_54vqq")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Baix"]
+position = Vector2(0, 2185)
+rotation = 1.5708
+texture = ExtResource("2_54vqq")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Baix"]
 position = Vector2(0, 1170)
 rotation = 1.5708
 texture = ExtResource("2_54vqq")
 
-[node name="Sprite2D5" type="Sprite2D" parent="."]
+[node name="Sprite2D8" type="Sprite2D" parent="Baix"]
 position = Vector2(0, 1683)
 rotation = 1.5708
 texture = ExtResource("2_54vqq")
 
-[node name="Sprite2D6" type="Sprite2D" parent="."]
+[node name="Sprite2D9" type="Sprite2D" parent="Baix"]
 position = Vector2(0, 664)
 rotation = 1.5708
 texture = ExtResource("2_54vqq")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 1176.5)
+[node name="Sprite2D10" type="Sprite2D" parent="Baix"]
+position = Vector2(0, 5719)
+rotation = 1.5708
+texture = ExtResource("2_54vqq")
+
+[node name="Sprite2D11" type="Sprite2D" parent="Baix"]
+position = Vector2(0, 6232)
+rotation = 1.5708
+texture = ExtResource("2_54vqq")
+
+[node name="Sprite2D12" type="Sprite2D" parent="Baix"]
+position = Vector2(0, 5213)
+rotation = 1.5708
+texture = ExtResource("2_54vqq")
+
+[node name="Sprite2D13" type="Sprite2D" parent="Baix"]
+position = Vector2(0, 4198)
+rotation = 1.5708
+texture = ExtResource("2_54vqq")
+
+[node name="Sprite2D14" type="Sprite2D" parent="Baix"]
+position = Vector2(0, 4711)
+rotation = 1.5708
+texture = ExtResource("2_54vqq")
+
+[node name="Sprite2D15" type="Sprite2D" parent="Baix"]
+position = Vector2(0, 3692)
+rotation = 1.5708
+texture = ExtResource("2_54vqq")
+
+[node name="Colisió Dalt" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -3855)
 shape = SubResource("RectangleShape2D_865va")
+
+[node name="Colisió Baix" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 3963.5)
+shape = SubResource("RectangleShape2D_8qf35")
