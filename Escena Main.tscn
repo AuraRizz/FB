@@ -1,9 +1,12 @@
-[gd_scene load_steps=12 format=3 uid="uid://c4h7qel4gviq"]
+[gd_scene load_steps=15 format=3 uid="uid://c4h7qel4gviq"]
 
+[ext_resource type="Script" uid="uid://3aw1tkaux80" path="res://Scripts/Joc.gd" id="1_7ghxd"]
 [ext_resource type="Script" uid="uid://cjceoj8cbq7ex" path="res://Scripts/Moviment Murs.gd" id="1_a0h3p"]
 [ext_resource type="Texture2D" uid="uid://8gepmojtkvmb" path="res://bosc fons.jpg" id="1_bts7h"]
 [ext_resource type="PackedScene" uid="uid://vfc2ar84femv" path="res://Escenes/Murs colisio.tscn" id="2_dh5c6"]
 [ext_resource type="PackedScene" uid="uid://bsx1ces6i0p0" path="res://Escenes/Flappy Bird.tscn" id="3_qxk4j"]
+[ext_resource type="Script" uid="uid://ba1toghdrvof1" path="res://Scripts/area_puntuacio.gd" id="3_v4u61"]
+[ext_resource type="Script" uid="uid://b4r7sxcfheajr" path="res://AreaPuntuacio.gd" id="4_7ghxd"]
 [ext_resource type="Script" uid="uid://dakq173j7v4pi" path="res://Scripts/flappy_bird.gd" id="4_p7w88"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a0h3p"]
@@ -24,9 +27,8 @@ size = Vector2(12, 125)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qvex0"]
 size = Vector2(11.25, 269)
 
-[node name="Node2D" type="Node2D"]
-
-[node name="Node2D" type="Node2D" parent="."]
+[node name="Joc" type="Node2D"]
+script = ExtResource("1_7ghxd")
 
 [node name="Murs" type="Node2D" parent="."]
 position = Vector2(110, 0)
@@ -40,6 +42,7 @@ scale = Vector2(0.0799986, 0.119998)
 script = null
 
 [node name="AreaPuntuacio" type="Area2D" parent="Murs/Mur 1"]
+script = ExtResource("3_v4u61")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 1/AreaPuntuacio"]
 position = Vector2(90.5, 229)
@@ -54,9 +57,10 @@ position = Vector2(195, 93)
 scale = Vector2(0.0799986, 0.119998)
 script = null
 
-[node name="Area2D" type="Area2D" parent="Murs/Mur 2"]
+[node name="AreaPuntuacio" type="Area2D" parent="Murs/Mur 2"]
+script = ExtResource("3_v4u61")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 2/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 2/AreaPuntuacio"]
 position = Vector2(195, 415.75)
 shape = SubResource("RectangleShape2D_73v40")
 
@@ -79,9 +83,10 @@ position = Vector2(296, 649)
 scale = Vector2(0.0799986, 0.119998)
 script = null
 
-[node name="Area2D" type="Area2D" parent="Murs/Mur 3"]
+[node name="AreaPuntuacio" type="Area2D" parent="Murs/Mur 3"]
+script = ExtResource("3_v4u61")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 3/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 3/AreaPuntuacio"]
 position = Vector2(295, 453)
 shape = SubResource("RectangleShape2D_v4u61")
 
@@ -104,9 +109,10 @@ position = Vector2(464, 550)
 scale = Vector2(0.0799986, 0.119998)
 script = null
 
-[node name="Area2D" type="Area2D" parent="Murs/Mur 4"]
+[node name="AreaPuntuacio" type="Area2D" parent="Murs/Mur 4"]
+script = ExtResource("3_v4u61")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 4/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 4/AreaPuntuacio"]
 position = Vector2(463.5, 366.5)
 shape = SubResource("RectangleShape2D_7ghxd")
 
@@ -129,9 +135,10 @@ position = Vector2(641, 550)
 scale = Vector2(0.0799986, 0.119998)
 script = null
 
-[node name="Area2D" type="Area2D" parent="Murs/Mur 5"]
+[node name="AreaPuntuacio" type="Area2D" parent="Murs/Mur 5"]
+script = ExtResource("4_7ghxd")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 5/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 5/AreaPuntuacio"]
 position = Vector2(641, 212.5)
 shape = SubResource("RectangleShape2D_jgmi8")
 
@@ -149,9 +156,10 @@ position = Vector2(811, 551)
 scale = Vector2(0.0799986, 0.119998)
 script = null
 
-[node name="Area2D" type="Area2D" parent="Murs/Mur 6"]
+[node name="AreaPuntuacio" type="Area2D" parent="Murs/Mur 6"]
+script = ExtResource("3_v4u61")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 6/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 6/AreaPuntuacio"]
 position = Vector2(810.625, 322.5)
 shape = SubResource("RectangleShape2D_qvex0")
 
@@ -165,6 +173,7 @@ scale = Vector2(0.0799986, 0.119998)
 script = null
 
 [node name="AreaPuntuacio" type="Area2D" parent="Murs/Mur 7"]
+script = ExtResource("3_v4u61")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 7/AreaPuntuacio"]
 position = Vector2(90.5, 229)
@@ -179,9 +188,10 @@ position = Vector2(195, 93)
 scale = Vector2(0.0799986, 0.119998)
 script = null
 
-[node name="Area2D" type="Area2D" parent="Murs/Mur 8"]
+[node name="AreaPuntuacio" type="Area2D" parent="Murs/Mur 8"]
+script = ExtResource("3_v4u61")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 8/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 8/AreaPuntuacio"]
 position = Vector2(195, 415.75)
 shape = SubResource("RectangleShape2D_73v40")
 
@@ -204,9 +214,10 @@ position = Vector2(296, 649)
 scale = Vector2(0.0799986, 0.119998)
 script = null
 
-[node name="Area2D" type="Area2D" parent="Murs/Mur 9"]
+[node name="AreaPuntuacio" type="Area2D" parent="Murs/Mur 9"]
+script = ExtResource("3_v4u61")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 9/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 9/AreaPuntuacio"]
 position = Vector2(295, 453)
 shape = SubResource("RectangleShape2D_v4u61")
 
@@ -229,9 +240,10 @@ position = Vector2(464, 550)
 scale = Vector2(0.0799986, 0.119998)
 script = null
 
-[node name="Area2D" type="Area2D" parent="Murs/Mur 10"]
+[node name="AreaPuntuacio" type="Area2D" parent="Murs/Mur 10"]
+script = ExtResource("3_v4u61")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 10/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 10/AreaPuntuacio"]
 position = Vector2(463.5, 366.5)
 shape = SubResource("RectangleShape2D_7ghxd")
 
@@ -254,9 +266,10 @@ position = Vector2(641, 550)
 scale = Vector2(0.0799986, 0.119998)
 script = null
 
-[node name="Area2D" type="Area2D" parent="Murs/Mur 11"]
+[node name="AreaPuntuacio" type="Area2D" parent="Murs/Mur 11"]
+script = ExtResource("3_v4u61")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 11/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 11/AreaPuntuacio"]
 position = Vector2(641, 212.5)
 shape = SubResource("RectangleShape2D_jgmi8")
 
@@ -274,9 +287,10 @@ position = Vector2(811, 551)
 scale = Vector2(0.0799986, 0.119998)
 script = null
 
-[node name="Area2D" type="Area2D" parent="Murs/Mur 12"]
+[node name="AreaPuntuacio" type="Area2D" parent="Murs/Mur 12"]
+script = ExtResource("3_v4u61")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 12/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Murs/Mur 12/AreaPuntuacio"]
 position = Vector2(810.625, 322.5)
 shape = SubResource("RectangleShape2D_qvex0")
 
@@ -294,3 +308,5 @@ motion_mirroring = Vector2(1, 1)
 position = Vector2(649.36, 311)
 scale = Vector2(3.16279, 3.16279)
 texture = ExtResource("1_bts7h")
+
+[connection signal="body_entered" from="Murs/Mur 12/AreaPuntuacio" to="Murs/Mur 1/AreaPuntuacio" method="_on_area_puntuacio_body_entered"]
